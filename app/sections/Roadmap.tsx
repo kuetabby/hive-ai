@@ -104,8 +104,8 @@ const Roadmap: React.FC = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
-          Follow Nova AI's journey as we innovate to transform businesses with
-          cutting-edge artificial intelligence and intelligent solutions.
+          Follow Nova AI&apos;s journey as we innovate to transform businesses
+          with cutting-edge artificial intelligence and intelligent solutions.
         </motion.p>
       </div>
 

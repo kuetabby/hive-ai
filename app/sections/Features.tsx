@@ -1,10 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { div, pre } from "framer-motion/client";
+// import { div, pre } from "framer-motion/client";
 import Image from "next/image";
 import { BiBell, BiTrophy } from "react-icons/bi";
-import { FaChartLine, FaRobot, FaUserAlt, FaPlug, FaBell } from "react-icons/fa";
+// import {
+//   FaChartLine,
+//   FaRobot,
+//   FaUserAlt,
+//   FaPlug,
+//   FaBell,
+// } from "react-icons/fa";
 
 export default function Features() {
   const sports = [
@@ -58,125 +64,125 @@ export default function Features() {
       title: "Formula 1",
       link: "",
     },
-  ]
+  ];
 
   const predictions = [
     {
-      "sport": {
-        "name": "Premier League",
-        "logo": "/assets/images/sports/premier_league.png"
+      sport: {
+        name: "Premier League",
+        logo: "/assets/images/sports/premier_league.png",
       },
-      "match": {
-        "time": "19:00",
-        "date": "Today",
-        "teams": [
+      match: {
+        time: "19:00",
+        date: "Today",
+        teams: [
           {
-            "name": "MUFC",
-            "logo": "/assets/images/teams/mu.png",
-            "status": "Win",
-            "winProbability": "62%"
+            name: "MUFC",
+            logo: "/assets/images/teams/mu.png",
+            status: "Win",
+            winProbability: "62%",
           },
           {
-            "name": "MCFC",
-            "logo": "/assets/images/teams/mc.png",
-            "status": "Lose"
-          }
-        ]
+            name: "MCFC",
+            logo: "/assets/images/teams/mc.png",
+            status: "Lose",
+          },
+        ],
       },
     },
     {
-      "sport": {
-        "name": "Premier League",
-        "logo": "/assets/images/sports/premier_league.png"
+      sport: {
+        name: "Premier League",
+        logo: "/assets/images/sports/premier_league.png",
       },
-      "match": {
-        "time": "19:00",
-        "date": "Today",
-        "teams": [
+      match: {
+        time: "19:00",
+        date: "Today",
+        teams: [
           {
-            "name": "MUFC",
-            "logo": "/assets/images/teams/mu.png",
-            "status": "Win",
-            "winProbability": "62%"
+            name: "MUFC",
+            logo: "/assets/images/teams/mu.png",
+            status: "Win",
+            winProbability: "62%",
           },
           {
-            "name": "MCFC",
-            "logo": "/assets/images/teams/mc.png",
-            "status": "Lose"
-          }
-        ]
+            name: "MCFC",
+            logo: "/assets/images/teams/mc.png",
+            status: "Lose",
+          },
+        ],
       },
     },
     {
-      "sport": {
-        "name": "Premier League",
-        "logo": "/assets/images/sports/premier_league.png"
+      sport: {
+        name: "Premier League",
+        logo: "/assets/images/sports/premier_league.png",
       },
-      "match": {
-        "time": "19:00",
-        "date": "Today",
-        "teams": [
+      match: {
+        time: "19:00",
+        date: "Today",
+        teams: [
           {
-            "name": "MUFC",
-            "logo": "/assets/images/teams/mu.png",
-            "status": "Win",
-            "winProbability": "62%"
+            name: "MUFC",
+            logo: "/assets/images/teams/mu.png",
+            status: "Win",
+            winProbability: "62%",
           },
           {
-            "name": "MCFC",
-            "logo": "/assets/images/teams/mc.png",
-            "status": "Lose"
-          }
-        ]
+            name: "MCFC",
+            logo: "/assets/images/teams/mc.png",
+            status: "Lose",
+          },
+        ],
       },
     },
     {
-      "sport": {
-        "name": "Premier League",
-        "logo": "/assets/images/sports/premier_league.png"
+      sport: {
+        name: "Premier League",
+        logo: "/assets/images/sports/premier_league.png",
       },
-      "match": {
-        "time": "19:00",
-        "date": "Today",
-        "teams": [
+      match: {
+        time: "19:00",
+        date: "Today",
+        teams: [
           {
-            "name": "MUFC",
-            "logo": "/assets/images/teams/mu.png",
-            "status": "Win",
-            "winProbability": "62%"
+            name: "MUFC",
+            logo: "/assets/images/teams/mu.png",
+            status: "Win",
+            winProbability: "62%",
           },
           {
-            "name": "MCFC",
-            "logo": "/assets/images/teams/mc.png",
-            "status": "Lose"
-          }
-        ]
+            name: "MCFC",
+            logo: "/assets/images/teams/mc.png",
+            status: "Lose",
+          },
+        ],
       },
-    },
-  ]
-
-  const features = [
-    {
-      title: "Predictive Insights",
-      description: "Anticipate future trends with AI-driven forecasts.",
-      icon: <FaChartLine />,
-    },
-    {
-      title: "Smart Automation",
-      description: "Revolutionize efficiency with adaptive AI workflows.",
-      icon: <FaRobot />,
-    },
-    {
-      title: "Dynamic Personalization",
-      description: "Deliver tailored user experiences at scale.",
-      icon: <FaUserAlt />,
-    },
-    {
-      title: "Seamless AI Integration",
-      description: "Integrate AI into your systems with zero friction.",
-      icon: <FaPlug />,
     },
   ];
+
+  // const features = [
+  //   {
+  //     title: "Predictive Insights",
+  //     description: "Anticipate future trends with AI-driven forecasts.",
+  //     icon: <FaChartLine />,
+  //   },
+  //   {
+  //     title: "Smart Automation",
+  //     description: "Revolutionize efficiency with adaptive AI workflows.",
+  //     icon: <FaRobot />,
+  //   },
+  //   {
+  //     title: "Dynamic Personalization",
+  //     description: "Deliver tailored user experiences at scale.",
+  //     icon: <FaUserAlt />,
+  //   },
+  //   {
+  //     title: "Seamless AI Integration",
+  //     description: "Integrate AI into your systems with zero friction.",
+  //     icon: <FaPlug />,
+  //   },
+  // ];
 
   return (
     <section
@@ -190,9 +196,7 @@ export default function Features() {
         transition={{ duration: 0.8 }}
       >
         {/* Section Heading */}
-        <h2 className="text-primaryColorLight mb-2">
-          Featured
-        </h2>
+        <h2 className="text-primaryColorLight mb-2">Featured</h2>
         <h2 className="text-4xl font-extrabold text-white mb-2">
           Let the games begin!
         </h2>
@@ -202,7 +206,8 @@ export default function Features() {
           transition={{ duration: 1, delay: 0.3 }}
           className=" text-white/80 mb-12"
         >
-          Here is a selection of the latest trending online games available at Nutcrack.
+          Here is a selection of the latest trending online games available at
+          Nutcrack.
         </motion.p>
         {/* Features Grid */}
         <motion.div
@@ -240,7 +245,9 @@ export default function Features() {
                 />
                 <p className="flex flex-col items-center text-xs">
                   {predict.match.date}
-                  <span className="font-bold text-base">{predict.match.time}</span>
+                  <span className="font-bold text-base">
+                    {predict.match.time}
+                  </span>
                 </p>
                 <BiBell />
               </div>
@@ -254,13 +261,21 @@ export default function Features() {
                     width={80}
                     height={10}
                   />
-                  <span className="font-bold text-sm">{predict.match.teams[0].name}</span>
+                  <span className="font-bold text-sm">
+                    {predict.match.teams[0].name}
+                  </span>
 
-                  {predict.match.teams[0].status == "Lose" ? <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">Lose</div> : <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
-                    <BiTrophy />
-                    {predict.match.teams[0].winProbability}
-                    <span>Win</span>
-                  </div>}
+                  {predict.match.teams[0].status == "Lose" ? (
+                    <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
+                      Lose
+                    </div>
+                  ) : (
+                    <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
+                      <BiTrophy />
+                      {predict.match.teams[0].winProbability}
+                      <span>Win</span>
+                    </div>
+                  )}
                 </div>
                 <span className="text-blue-500 font-bold">VS</span>
                 <div className="flex flex-col items-center justify-center gap-2">
@@ -271,16 +286,23 @@ export default function Features() {
                     width={80}
                     height={10}
                   />
-                  <span className="font-bold text-sm">{predict.match.teams[1].name}</span>
+                  <span className="font-bold text-sm">
+                    {predict.match.teams[1].name}
+                  </span>
 
-                  {predict.match.teams[1].status == "Lose" ? <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">Lose</div> : <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
-                    <BiTrophy />
-                    {predict.match.teams[1].winProbability}
-                    <span>Win</span>
-                  </div>}
+                  {predict.match.teams[1].status == "Lose" ? (
+                    <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
+                      Lose
+                    </div>
+                  ) : (
+                    <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
+                      <BiTrophy />
+                      {predict.match.teams[1].winProbability}
+                      <span>Win</span>
+                    </div>
+                  )}
                 </div>
               </div>
-
             </motion.div>
           ))}
         </motion.div>
@@ -293,9 +315,7 @@ export default function Features() {
         transition={{ duration: 0.8 }}
       >
         {/* Section Heading */}
-        <h2 className=" text-primaryColorLight mb-2">
-          Sports
-        </h2>
+        <h2 className=" text-primaryColorLight mb-2">Sports</h2>
         <h2 className="text-4xl font-extrabold text-white mb-2">
           Lorem ipsum dolor sit amet!
         </h2>
@@ -305,7 +325,8 @@ export default function Features() {
           transition={{ duration: 1, delay: 0.3 }}
           className=" text-white/80 mb-12"
         >
-          Here is a selection of the latest trending online games available at Nutcrack.
+          Here is a selection of the latest trending online games available at
+          Nutcrack.
         </motion.p>
         {/* Features Grid */}
         <motion.div
@@ -345,8 +366,9 @@ export default function Features() {
               {/* Border Glow */}
               <div className="absolute inset-0 rounded-lg border border-transparent hover:border-primaryColorLight transition-all" />
               <button
-                onClick={() => { }}
-                className="border border-white/50 rounded-lg px-4 py-2 text-sm">
+                onClick={() => {}}
+                className="border border-white/50 rounded-lg px-4 py-2 text-sm"
+              >
                 View predictions
               </button>
             </motion.div>
