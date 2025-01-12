@@ -39,7 +39,7 @@ const Approach = () => {
           Ballon AI.
         </motion.p>
 
-        <motion.div className="flex flex-col sm:flex-row items-center text-start gap-12">
+        <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12">
           <Image
             src="/assets/images/cross.png"
             alt="Ballon AI"
@@ -58,7 +58,7 @@ const Approach = () => {
                 return (
                   <div
                     key={index}
-                    className="flex flex-row gap-2 items-center mb-1"
+                    className="flex flex-row gap-2 justify-center sm:justify-start items-center mb-1"
                   >
                     <LuCircleCheckBig className="text-primaryColorLight" />
                     {item}
@@ -68,7 +68,7 @@ const Approach = () => {
             </div>
           </div>
         </motion.div>
-        <motion.div className="flex flex-col-reverse sm:flex-row items-center text-start gap-12 mt-24">
+        <motion.div className="flex flex-col-reverse sm:flex-row items-center text-center sm:text-start gap-12 mt-24">
           <div className="flex flex-col text-gray-400">
             <h1 className="text-2xl font-bold text-white">
               Historical Performance Analysis & Market Data Integration
@@ -81,7 +81,7 @@ const Approach = () => {
                 return (
                   <div
                     key={index}
-                    className="flex flex-row gap-2 items-center mb-1"
+                    className="flex flex-row gap-2 justify-center sm:justify-start items-center mb-1"
                   >
                     <LuCircleCheckBig className="text-primaryColorLight" />
                     {item}
@@ -97,7 +97,7 @@ const Approach = () => {
             height={150}
           />
         </motion.div>
-        <motion.div className="flex flex-col sm:flex-row items-center text-start gap-12 mt-24">
+        <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12 mt-24">
           <Image
             src="/assets/images/circle.png"
             alt="Ballon AI"
@@ -116,7 +116,7 @@ const Approach = () => {
                 return (
                   <div
                     key={index}
-                    className="flex flex-row gap-2 items-center mb-1"
+                    className="flex flex-row gap-2 justify-center sm:justify-start items-center mb-1"
                   >
                     <LuCircleCheckBig className="text-primaryColorLight" />
                     {item}

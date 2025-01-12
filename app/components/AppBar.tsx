@@ -43,7 +43,7 @@ export default function AppBar() {
           <Link className="flex flex-row gap-2 items-center" href="/">
             <Image
               src="/assets/images/ballon_icon.png"
-              alt="Representation of Ballon AI Engine"
+              alt="Representation of Ballon AI"
               width={24}
               height={24}
               className="rounded-xl w-auto h-auto object-cover"

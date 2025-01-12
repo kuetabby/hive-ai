@@ -76,19 +76,19 @@ export default function Roadmap() {
               className="absolute"
               src={"/assets/images/roadmap.png"}
               alt="Roadmap Ballon AI"
-              width={250}
-              height={250}
+              width={240}
+              height={240}
             />
           </div>
         </motion.div>
 
         {/* Timeline */}
-        <div className="mt-24 relative px-8">
+        <div className="mt-24 relative px-2">
           <div className="flex justify-between items-center border-t border-primaryColorLight/25">
             {roadmapData.map((item, index) => (
               <motion.div
                 key={index}
-                className={`text-center relative ${
+                className={`text-center relative text-xs sm:text-lg ${
                   index === currentIndex
                     ? "text-primaryColorLight"
                     : "text-gray-400"
@@ -108,8 +108,8 @@ export default function Roadmap() {
                   />
                 </div>
                 {/* Phase */}
-                <p className="mt-6 text-lg font-semibold">{item.phase}</p>
-                <p className="text-sm">{item.month}</p>
+                <p className="mt-6  font-semibold">{item.phase}</p>
+                {item.month}
               </motion.div>
             ))}
           </div>
