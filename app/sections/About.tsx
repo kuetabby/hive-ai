@@ -27,15 +27,15 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="relative w-full py-28 bg-backgroundColor overflow-hidden"
+      className="relative w-full py-16 bg-backgroundColor overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Right-Side Full-Screen Background Image */}
       <div
-        className="absolute w-80 h-80 right-12 top-64 bg-cover bg-no-repeat bg-right pointer-events-none"
-        style={{ backgroundImage: `url('/assets/images/cube.png')` }}
+        className="absolute w-96 h-96 right-12 top-48 sm:top-24 bg-cover bg-no-repeat bg-right pointer-events-none"
+        style={{ backgroundImage: `url('/assets/images/img_1.png')` }}
       ></div>
 
       <motion.div
@@ -62,7 +62,7 @@ const About = () => {
             className="mt-4 text-white/80"
           >
             Here is a selection of the latest trending online games available at
-            Nutcrack.
+            Ballon AI.
           </motion.p>
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-6"

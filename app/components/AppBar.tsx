@@ -37,13 +37,13 @@ export default function AppBar() {
 
   return (
     <header className="fixed top-0 left-0 w-full text-white z-50 p-4">
-      <nav className="container mx-auto flex items-center max-w-screen-lg justify-between py-4 px-6 bg-backgroundColor/45 backdrop-blur-md border border-primaryColorLight/25 rounded-full m-2">
+      <nav className="container mx-auto flex items-center max-w-screen-lg justify-between py-4 px-6 bg-backgroundColor/80 backdrop-blur-md border border-primaryColorLight/25 rounded-full m-2">
         {/* Logo */}
         <h1 className="text-lg font-bold tracking-wide">
           <Link className="flex flex-row gap-2 items-center" href="/">
             <Image
               src="/assets/images/ballon_icon.png"
-              alt="Representation of Nova AI Engine"
+              alt="Representation of Ballon AI Engine"
               width={24}
               height={24}
               className="rounded-xl w-auto h-auto object-cover"
@@ -94,7 +94,7 @@ export default function AppBar() {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="md:hidden bg-backgroundColor/45 border border-primaryColorLight/25 backdrop-blur-sm rounded-xl"
+          className="md:hidden bg-backgroundColor/80 border border-primaryColorLight/25 backdrop-blur-sm rounded-xl"
         >
           <ul className="flex flex-col items-center gap-6 py-4">
             {menuItems.map((item) => (

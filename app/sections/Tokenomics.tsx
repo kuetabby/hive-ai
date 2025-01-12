@@ -2,100 +2,66 @@
 
 import { motion } from "framer-motion";
 
+interface StatItem {
+  value: string;
+  description: string;
+}
+
+// Data untuk Statistik
+const stats: StatItem[] = [
+  { value: "50m", description: "Lorem ipsum" },
+  { value: "45m", description: "Dolor sit" },
+  { value: "400+", description: "Amet" },
+  { value: "8+", description: "Consectetur" },
+];
+
 export default function Tokenomics() {
-  const data = [
-    { label: "Total Supply", value: "1 Billion NOVA" },
-    { label: "Utility", value: "AI Services" },
-    { label: "Network", value: "Solana" },
-    { label: "Launch Date", value: "Q1 2025" },
-    { label: "Circulating Supply", value: "500 Million Tokens" },
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 1,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 12,
-      },
-    },
-    hover: {
-      scale: 1.05,
-      boxShadow: "0px 10px 30px rgba(255, 255, 255, 0.4)",
-    },
-  };
-
   return (
-    <section
-      id="tokenomics"
-      className="w-full py-20 bg-backgroundColor text-white"
-    >
-      <motion.div
-        className="container mx-auto px-6 lg:px-12 text-center"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
-        {/* Section Heading */}
-        <motion.h2
-          className="text-5xl font-extrabold mb-6 text-primaryColorLight"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          Tokenomics
-        </motion.h2>
-        <motion.p
-          className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          Nova Token is designed to empower innovation in AI and blockchain,
-          providing governance, utility, and opportunities for staking.
-        </motion.p>
+    <section id="tokenomics" className="relative w-full py-24">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start p-8">
+        {/* Konten Kiri */}
+        <div className="lg:w-1/2">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-primaryColorLight uppercase tracking-wide text-sm mb-2">
+              Tokenomics
+            </h2>
+            <h1 className="text-4xl font-bold mb-4">Let the games begin!</h1>
+            <p className="text-gray-400 mb-8">
+              Ballon AI Chains token supply is capped at 1 Billion, with a
+              strategic allocation:
+            </p>
 
-        {/* Animated Interactive Cards */}
+            {/* Statistik */}
+            <div className="grid grid-cols-2 gap-8">
+              {stats.map((stat, index) => (
+                <div key={index}>
+                  <h3 className="text-3xl font-bold">{stat.value}</h3>
+                  <p className="text-gray-400">{stat.description}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Grafis Kanan */}
         <motion.div
-          className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="lg:w-1/2 mt-16 lg:mt-0 flex justify-center"
         >
-          {data.map((item, index) => (
-            <motion.div
-              key={index}
-              className="relative bg-backgroundColor p-8 rounded-xl shadow-2xl border border-primaryColorLight hover:shadow-lg shadow-primaryColorLight/10 transition-transform"
-              variants={cardVariants}
-              whileHover="hover"
-            >
-              {/* Card Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primaryColorDark via-primaryColorLight to-primaryColorDark opacity-30 blur-lg rounded-xl"></div>
-
-              {/* Card Content */}
-              <div className="relative z-10">
-                <h3 className="text-2xl font-semibold text-white">
-                  {item.label}
-                </h3>
-                <p className="mt-2 text-lg text-gray-200">{item.value}</p>
-              </div>
-            </motion.div>
-          ))}
+          <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+            <div className="w-72 h-72 bg-black rounded-full flex items-center justify-center relative">
+              <div className="absolute w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-blue-500 blur-xl"></div>
+              <div className="relative w-60 h-60 bg-gradient-to-r from-pink-400 to-blue-400 rounded-full"></div>
+            </div>
+          </div>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }

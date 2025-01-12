@@ -161,36 +161,13 @@ export default function Features() {
     },
   ];
 
-  // const features = [
-  //   {
-  //     title: "Predictive Insights",
-  //     description: "Anticipate future trends with AI-driven forecasts.",
-  //     icon: <FaChartLine />,
-  //   },
-  //   {
-  //     title: "Smart Automation",
-  //     description: "Revolutionize efficiency with adaptive AI workflows.",
-  //     icon: <FaRobot />,
-  //   },
-  //   {
-  //     title: "Dynamic Personalization",
-  //     description: "Deliver tailored user experiences at scale.",
-  //     icon: <FaUserAlt />,
-  //   },
-  //   {
-  //     title: "Seamless AI Integration",
-  //     description: "Integrate AI into your systems with zero friction.",
-  //     icon: <FaPlug />,
-  //   },
-  // ];
-
   return (
     <section
       id="features"
       className="w-full py-20 bg-backgroundColor space-y-64"
     >
       <motion.div
-        className="container flex flex-col items-start mx-auto px-6 text-center"
+        className="container flex flex-col items-center sm:items-start mx-auto px-6 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -207,7 +184,7 @@ export default function Features() {
           className=" text-white/80 mb-12"
         >
           Here is a selection of the latest trending online games available at
-          Nutcrack.
+          Ballon AI.
         </motion.p>
         {/* Features Grid */}
         <motion.div
@@ -326,7 +303,7 @@ export default function Features() {
           className=" text-white/80 mb-12"
         >
           Here is a selection of the latest trending online games available at
-          Nutcrack.
+          Ballon AI.
         </motion.p>
         {/* Features Grid */}
         <motion.div

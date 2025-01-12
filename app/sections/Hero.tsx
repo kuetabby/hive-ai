@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
-        src="/assets/videos/nova.mp4"
+        src="/assets/videos/ballon_ai_bg.mp4"
         autoPlay
         loop
         muted
@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="flex flex-row items-center gap-2 bg-primaryColorLight/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primaryColorLight/25 text-white">
             <Image
               src="/assets/images/ballon_icon.png"
-              alt="Representation of Nova AI Engine"
+              alt="Representation of Ballon AI Engine"
               width={24}
               height={24}
               className="rounded-xl w-auto h-auto object-cover"
