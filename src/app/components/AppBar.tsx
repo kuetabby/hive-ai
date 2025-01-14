@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
+import LogoPurple from "@/src/assets/bethive_logo_purple.png";
+
 export default function AppBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -42,7 +44,7 @@ export default function AppBar() {
         <h1 className="text-lg font-bold tracking-wide">
           <Link className="flex flex-row gap-2 items-center" href="/">
             <Image
-              src="/assets/images/bethive_logo_purple.png"
+              src={LogoPurple}
               alt="Representation of Bethive AI"
               width={24}
               height={24}

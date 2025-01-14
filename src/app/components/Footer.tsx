@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { FaBook, FaTelegram, FaXTwitter } from "react-icons/fa6";
 
+import LogoPurple from "@/src/assets/bethive_logo_purple.png";
+
 export default function Footer() {
   return (
     <footer className="bg-backgroundColor text-gray-300 py-10">
@@ -10,7 +12,7 @@ export default function Footer() {
         <h1 className="leading-tight flex flex-wrap justify-center gap-4">
           <div className="flex flex-row items-center gap-2 bg-primaryColorLight/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primaryColorLight/25 text-white">
             <Image
-              src="/assets/images/bethive_logo_purple.png"
+              src={LogoPurple}
               alt="Representation of Bethive AI"
               width={24}
               height={24}

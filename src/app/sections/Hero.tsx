@@ -6,6 +6,8 @@ import Image from "next/image";
 // import { FaCopy } from "react-icons/fa";
 // import { IoCopyOutline } from "react-icons/io5";
 
+import LogoPurple from "@/src/assets/bethive_logo_purple.png";
+
 export default function Hero() {
   // const contractAddress = "0x1234...abcd";
   // const ticker = "$XXX";
@@ -45,7 +47,7 @@ export default function Hero() {
         >
           <div className="flex flex-row items-center gap-2 bg-primaryColorLight/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primaryColorLight/25 text-white">
             <Image
-              src="/assets/images/bethive_logo_purple.png"
+              src={LogoPurple}
               alt="Bethive AI"
               width={24}
               height={24}
