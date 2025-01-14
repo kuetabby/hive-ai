@@ -16,9 +16,15 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const futura = localFont({
+  src: "./fonts/Futura.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+
 export const metadata: Metadata = {
-  title: "Ballon AI",
-  description: "AI Expert for Every Mind",
+  title: "Bethive AI",
+  description: "Smarter Football Betting with AI Precision",
 };
 
 export default function RootLayout({
@@ -28,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${futura.className} antialiased`}>
         <AppBar />
         <Toaster
           position="top-center"

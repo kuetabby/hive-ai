@@ -62,7 +62,7 @@ const About = () => {
             className="mt-4 text-white/80"
           >
             Here is a selection of the latest trending online games available at
-            Ballon AI.
+            Bethive AI.
           </motion.p>
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-6"

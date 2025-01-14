@@ -36,13 +36,13 @@ const Approach = () => {
           className=" text-white/80 mb-12"
         >
           Here is a selection of the latest trending online games available at
-          Ballon AI.
+          Bethive AI.
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12">
           <Image
             src="/assets/images/cross.png"
-            alt="Ballon AI"
+            alt="Bethive AI"
             width={250}
             height={250}
           />
@@ -92,7 +92,7 @@ const Approach = () => {
           </div>
           <Image
             src="/assets/images/timer.png"
-            alt="Ballon AI"
+            alt="Bethive AI"
             width={150}
             height={150}
           />
@@ -100,7 +100,7 @@ const Approach = () => {
         <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12 mt-24">
           <Image
             src="/assets/images/circle.png"
-            alt="Ballon AI"
+            alt="Bethive AI"
             width={250}
             height={250}
           />

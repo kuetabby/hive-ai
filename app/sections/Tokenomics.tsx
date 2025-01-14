@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { contractAddress } from "../utils/constant";
 
 interface StatItem {
   value: string;
@@ -9,10 +10,10 @@ interface StatItem {
 
 // Data untuk Statistik
 const stats: StatItem[] = [
-  { value: "50m", description: "Lorem ipsum" },
-  { value: "45m", description: "Dolor sit" },
-  { value: "400+", description: "Amet" },
-  { value: "8+", description: "Consectetur" },
+  { value: "-", description: "Name" },
+  { value: "100M", description: "Total Supply" },
+  { value: "5%", description: "Fee Buy / Sell" },
+  { value: "ETH / ERC-20", description: "Network" },
 ];
 
 export default function Tokenomics() {
@@ -29,11 +30,8 @@ export default function Tokenomics() {
             <h2 className="text-primaryColorLight uppercase tracking-wide text-sm mb-2">
               Tokenomics
             </h2>
-            <h1 className="text-4xl font-bold mb-4">Let the games begin!</h1>
-            <p className="text-gray-400 mb-8">
-              Ballon AI Chains token supply is capped at 1 Billion, with a
-              strategic allocation:
-            </p>
+            {/* <h1 className="text-4xl font-bold mb-4">Let the games begin!</h1> */}
+            <p className="text-gray-400 mb-8">{contractAddress}</p>
 
             {/* Statistik */}
             <div className="grid grid-cols-2 gap-8">

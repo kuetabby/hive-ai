@@ -14,24 +14,25 @@ interface FAQItem {
 // Data FAQ
 const faqData: FAQItem[] = [
   {
-    question: "What is Ballon AI?",
+    question: "What is Bethive AI?",
     answer:
-      "Ballon AI is an AI-powered betting assistant designed to provide accurate predictions by analyzing market data, historical performance, and real-time trends.",
+      "Bethive AI is a predictive platform that leverages advanced artificial intelligence and deep learning algorithms to provide accurate football match predictions, player performance analysis, and game insights. It empowers users to make smarter and more informed betting decisions.",
   },
   {
-    question: "How does Ballon AI improve betting outcomes?",
+    question:
+      "What makes Bethive AI different from other prediction platforms?",
     answer:
-      "Ballon AI uses machine learning algorithms to process vast amounts of data, delivering actionable insights and predictions with up to 85% accuracy to enhance your betting decisions.",
+      "Bethive AI combines AI-driven predictions with blockchain technology, offering unmatched accuracy, transparency, and community rewards. Our platform analyzes diverse datasets, including historical matches, player stats, weather conditions, and real-time analytics, ensuring precise and reliable insights.",
   },
   {
-    question: "What sports are covered by Ballon AI?",
+    question: "Who can use Bethive AI?",
     answer:
-      "Ballon AI supports a variety of sports, including football, basketball, tennis, and esports, ensuring accurate predictions tailored to each game.",
+      "Bethive AI is designed for everyone, from casual bettors to seasoned experts. Whether you're betting on local football matches or international tournaments, Bethive AI provides tailored insights to elevate your betting strategies.",
   },
   {
-    question: "Do I need a subscription to use Ballon AI?",
+    question: "How does Bethive AI promote responsible betting?",
     answer:
-      "Ballon AI offers both free and premium plans. Free users can access basic predictions, while premium users benefit from advanced analytics, higher accuracy, and additional features.",
+      "Bethive AI encourages users to bet responsibly by providing data-driven insights and educational resources. Our goal is to enhance the betting experience while promoting informed and thoughtful decision-making.",
   },
 ];
 
@@ -43,7 +44,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="relative py-20 px-6">
+    <section id="faq" className="relative py-20 px-6">
+      <div className="h-10" />
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16">
         {/* Konten FAQ di Kiri */}
         <motion.div
@@ -55,10 +57,10 @@ export default function FAQSection() {
           <h1 className="text-4xl font-bold text-white mb-6 text-center sm:text-start">
             Frequently Asked Questions
           </h1>
-          <p className="mb-8 leading-relaxed text-lg text-center sm:text-start">
-            Learn how <span className="text-primaryColorLight">Ballon AI</span>{" "}
+          {/* <p className="mb-8 leading-relaxed text-lg text-center sm:text-start">
+            Learn how <span className="text-primaryColorLight">Bethive AI</span>{" "}
             enhances your betting experience with advanced AI predictions.
-          </p>
+          </p> */}
 
           {/* Daftar FAQ */}
           <div className="space-y-4">

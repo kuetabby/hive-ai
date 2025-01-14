@@ -9,10 +9,10 @@ export default function AppBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { id: "hero", label: "Home", external: false },
-    { id: "features", label: "Features", external: false },
+    { id: "home", label: "Home", external: false },
+    { id: "events", label: "Events", external: false },
     { id: "tokenomics", label: "Tokenomics", external: false },
-    { id: "roadmap", label: "Roadmap", external: false },
+    { id: "faq", label: "FAQ", external: false },
     // { id: "agents", label: "AI Agents", external: true },
   ];
 
@@ -42,14 +42,14 @@ export default function AppBar() {
         <h1 className="text-lg font-bold tracking-wide">
           <Link className="flex flex-row gap-2 items-center" href="/">
             <Image
-              src="/assets/images/ballon_icon.png"
-              alt="Representation of Ballon AI"
+              src="/assets/images/bethive_logo_purple.png"
+              alt="Representation of Bethive AI"
               width={24}
               height={24}
               className="rounded-xl w-auto h-auto object-cover"
               priority={false}
             />
-            Ballon AI
+            Bethive AI
           </Link>
         </h1>
 
@@ -59,7 +59,7 @@ export default function AppBar() {
             <li key={item.id}>
               <button
                 onClick={() => handleNavigation(item.id, item.external)}
-                className="hover:underline"
+                className="hover:text-primaryColor"
               >
                 {item.label}
               </button>
@@ -70,7 +70,7 @@ export default function AppBar() {
         {/* Right-Aligned Button */}
         <div className="hidden md:block">
           <button className="bg-gradient-to-br from-primaryColorLight via-primaryColor to-primaryColorDark border border-primaryColorLight font-semibold text-white py-2 px-4 rounded-full">
-            $BALLON
+            BET NOW !
           </button>
         </div>
 
@@ -101,7 +101,7 @@ export default function AppBar() {
               <li key={item.id}>
                 <button
                   onClick={() => handleNavigation(item.id, item.external)}
-                  className="hover:underline text-white"
+                  className="hover:text-primaryColor text-white"
                 >
                   {item.label}
                 </button>
@@ -110,7 +110,7 @@ export default function AppBar() {
             {/* Mobile "Get Started" Button */}
             <li>
               <button className="bg-gradient-to-br from-primaryColorLight via-primaryColor to-primaryColorDark border border-primaryColorLight font-semibold text-white py-2 px-4 rounded-full">
-                $BALLON
+                BET NOW !
               </button>
             </li>
           </ul>

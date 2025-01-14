@@ -46,7 +46,7 @@ export default function Roadmap() {
           <h1 className="text-5xl font-bold mb-4">Lorem ipsum dolor sit</h1>
           <p className="text-lg text-gray-400">
             Here is a selection of the latest trending online games available at
-            Ballon AI.
+            Bethive AI.
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Roadmap() {
             <Image
               className="absolute"
               src={"/assets/images/roadmap.png"}
-              alt="Roadmap Ballon AI"
+              alt="Roadmap Bethive AI"
               width={240}
               height={240}
             />

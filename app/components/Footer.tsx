@@ -10,19 +10,18 @@ export default function Footer() {
         <h1 className="leading-tight flex flex-wrap justify-center gap-4">
           <div className="flex flex-row items-center gap-2 bg-primaryColorLight/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primaryColorLight/25 text-white">
             <Image
-              src="/assets/images/ballon_icon.png"
-              alt="Representation of Ballon AI"
+              src="/assets/images/bethive_logo_purple.png"
+              alt="Representation of Bethive AI"
               width={24}
               height={24}
               className="rounded-xl w-auto h-auto object-cover"
               priority={false}
             />
-            Ballon AI
+            Bethive AI
           </div>
         </h1>
-        The world’s first AI sports prediction that puts users at the forefront.
-        We make beautiful data accessible to brands while ensuring those who
-        create them retain their rights and are properly rewarded.
+        Bethive AI revolutionizes football betting with AI predictions,
+        empowering users with accurate insights and smarter strategies.
         <div className="mt-4 flex space-x-4 text-lg items-center justify-center">
           <a
             href="#"
@@ -47,7 +46,7 @@ export default function Footer() {
           </a>
         </div>
         {/* Quick Links */}
-        <div>
+        {/* <div>
           <h3 className="mt-4 text-lg font-bold text-primaryColorLight">
             Quick Links
           </h3>
@@ -58,8 +57,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#features" className="hover:text-blue-400">
-                Features
+              <a href="#events" className="hover:text-blue-400">
+                Events
               </a>
             </li>
             <li>
@@ -73,7 +72,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* Contact & Social Media */}
         {/* <div>
           <h3 className="text-lg font-bold text-primaryColorLight">
@@ -87,10 +86,10 @@ export default function Footer() {
       {/* Copyright */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm">
         <p>
-          © {new Date().getFullYear()} Ballon AI. All Rights Reserved. |
+          © {new Date().getFullYear()} Bethive AI. All Rights Reserved. |
           Designed by{" "}
           <a href="#" className="text-primaryColorLight hover:underline">
-            Ballon AI
+            Bethive AI
           </a>
           .
         </p>

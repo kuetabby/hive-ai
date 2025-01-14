@@ -3,17 +3,17 @@ import Features from "./sections/Features";
 import About from "./sections/About";
 import Approach from "./sections/Approach";
 import Tokenomics from "./sections/Tokenomics";
-import Roadmap from "./sections/Roadmap";
+// import Roadmap from "./sections/Roadmap";
 import FAQSection from "./sections/FAQ";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Features />
       <About />
       <Tokenomics />
-      <Features />
-      <Roadmap />
+      {/* <Roadmap /> */}
       <Approach />
       <FAQSection />
     </>

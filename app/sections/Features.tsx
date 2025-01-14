@@ -162,10 +162,7 @@ export default function Features() {
   ];
 
   return (
-    <section
-      id="features"
-      className="w-full py-20 bg-backgroundColor space-y-64"
-    >
+    <section id="events" className="w-full py-20 bg-backgroundColor space-y-64">
       <motion.div
         className="container flex flex-col items-center sm:items-start mx-auto px-6 text-center"
         initial={{ opacity: 0 }}
@@ -173,7 +170,7 @@ export default function Features() {
         transition={{ duration: 0.8 }}
       >
         {/* Section Heading */}
-        <h2 className="text-primaryColorLight mb-2">Featured</h2>
+        <h2 className="text-primaryColorLight mb-2">Events</h2>
         <h2 className="text-4xl font-extrabold text-white mb-2">
           Let the games begin!
         </h2>
@@ -183,8 +180,8 @@ export default function Features() {
           transition={{ duration: 1, delay: 0.3 }}
           className=" text-white/80 mb-12"
         >
-          Here is a selection of the latest trending online games available at
-          Ballon AI.
+          Here is a selection of the latest trending events available at Bethive
+          AI.
         </motion.p>
         {/* Features Grid */}
         <motion.div
@@ -285,13 +282,12 @@ export default function Features() {
         </motion.div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="container flex flex-col items-center mx-auto px-6 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Section Heading */}
         <h2 className=" text-primaryColorLight mb-2">Sports</h2>
         <h2 className="text-4xl font-extrabold text-white mb-2">
           Lorem ipsum dolor sit amet!
@@ -305,7 +301,6 @@ export default function Features() {
           Here is a selection of the latest trending online games available at
           Ballon AI.
         </motion.p>
-        {/* Features Grid */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8"
           initial="hidden"
@@ -331,16 +326,13 @@ export default function Features() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              {/* Icon */}
               <Image
                 src={sport.image}
                 alt={sport.title}
                 width={100}
                 height={100}
               />
-              {/* Title */}
               <h3 className="text-md text-white">{sport.title}</h3>
-              {/* Border Glow */}
               <div className="absolute inset-0 rounded-lg border border-transparent hover:border-primaryColorLight transition-all" />
               <button
                 onClick={() => {}}
@@ -351,7 +343,7 @@ export default function Features() {
             </motion.div>
           ))}
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
