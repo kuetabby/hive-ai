@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { contractAddress } from "../utils/constant";
+import FeaturePulseSection from "../components/FeaturePulseSection";
 
 interface StatItem {
   value: string;
@@ -18,8 +19,11 @@ const stats: StatItem[] = [
 
 export default function Tokenomics() {
   return (
-    <section id="tokenomics" className="relative w-full py-24">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start p-8">
+    <section id="tokenomics" className="relative w-full py-0 lg:py-24">
+      <h2 className=" flex justify-center item-center text-primaryColorLight uppercase tracking-wide text-sm mb-2 block lg:hidden">
+        Tokenomics
+      </h2>
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row  lg:flex-row items-center lg:items-center justify-around p-20 lg:p-6">
         {/* Konten Kiri */}
         <div className="lg:w-1/2">
           <motion.div
@@ -27,7 +31,7 @@ export default function Tokenomics() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-primaryColorLight uppercase tracking-wide text-sm mb-2">
+            <h2 className="text-primaryColorLight uppercase tracking-wide text-sm mb-2 hidden lg:block">
               Tokenomics
             </h2>
             {/* <h1 className="text-4xl font-bold mb-4">Let the games begin!</h1> */}
@@ -37,7 +41,9 @@ export default function Tokenomics() {
             <div className="grid grid-cols-2 gap-8">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <h3 className="text-3xl font-bold">{stat.value}</h3>
+                  <h3 className="text-2xl lg:text-4xl font-bold">
+                    {stat.value}
+                  </h3>
                   <p className="text-gray-400">{stat.description}</p>
                 </div>
               ))}
@@ -46,19 +52,16 @@ export default function Tokenomics() {
         </div>
 
         {/* Grafis Kanan */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="lg:w-1/2 mt-16 lg:mt-0 flex justify-center"
         >
-          <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
-            <div className="w-72 h-72 bg-black rounded-full flex items-center justify-center relative">
-              <div className="absolute w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-blue-500 blur-xl"></div>
-              <div className="relative w-60 h-60 bg-gradient-to-r from-pink-400 to-blue-400 rounded-full"></div>
-            </div>
-          </div>
-        </motion.div>
+          
+        </motion.div> */}
+
+        <FeaturePulseSection />
       </div>
     </section>
   );

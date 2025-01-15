@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaBook, FaTelegram, FaXTwitter } from "react-icons/fa6";
 
 import LogoPurple from "@/src/assets/bethive_logo_purple.png";
+import { socialsLink } from "../utils/constant";
 
 export default function Footer() {
   return (
@@ -26,22 +27,22 @@ export default function Footer() {
         empowering users with accurate insights and smarter strategies.
         <div className="mt-4 flex space-x-4 text-lg items-center justify-center">
           <a
-            href="#"
+            href={socialsLink.twitter}
             aria-label="Twitter"
             className="hover:text-primaryColorLight"
           >
             <FaXTwitter size={24} />
           </a>
           <a
-            href="#"
-            aria-label="Twitter"
+            href={socialsLink.telegram}
+            aria-label="Telegram"
             className="hover:text-primaryColorLight"
           >
             <FaTelegram size={24} />
           </a>
           <a
-            href="#"
-            aria-label="GitHub"
+            href={socialsLink.whitepaper}
+            aria-label="whitepaper"
             className="hover:text-primaryColorLight"
           >
             <FaBook size={24} />

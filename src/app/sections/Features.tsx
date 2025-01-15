@@ -204,78 +204,86 @@ export default function Features() {
           {predictions.map((predict, index) => (
             <motion.div
               key={index}
-              className="relative w-full flex flex-col bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 shadow-lg p-6 rounded-lg text-center transform transition-transform hover:scale-105 border border-white/10 hover:border-primaryColorLight/50 gap-4"
+              className="relative w-full flex flex-col bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 shadow-lg p-6 rounded-lg text-center transform transition-transform hover:scale-105 border border-white/10 hover:border-primaryColorLight/50 gap-4 overflow-hidden"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <div className="flex flex-row w-full justify-between items-center">
-                <Image
-                  src={predict.sport.logo}
-                  alt={predict.sport.name}
-                  className="w-[80px] h-[30px]"
-                  width={80}
-                  height={10}
-                />
-                <p className="flex flex-col items-center text-xs">
-                  {predict.match.date}
-                  <span className="font-bold text-base">
-                    {predict.match.time}
-                  </span>
-                </p>
-                <BiBell />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-md flex items-center justify-center z-10">
+                <p className="text-white font-bold text-xl">Coming Soon</p>
               </div>
 
-              <div className="flex flex-row w-full justify-between items-center">
-                <div className="flex flex-col items-center justify-center gap-2">
+              {/* Original Content */}
+              <div className="relative z-0">
+                <div className="flex flex-row w-full justify-between items-center">
                   <Image
-                    src={predict.match.teams[0].logo}
+                    src={predict.sport.logo}
                     alt={predict.sport.name}
-                    className="w-[40px] h-[40px]"
+                    className="w-[80px] h-[30px]"
                     width={80}
                     height={10}
                   />
-                  <span className="font-bold text-sm">
-                    {predict.match.teams[0].name}
-                  </span>
-
-                  {predict.match.teams[0].status == "Lose" ? (
-                    <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
-                      Lose
-                    </div>
-                  ) : (
-                    <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
-                      <BiTrophy />
-                      {predict.match.teams[0].winProbability}
-                      <span>Win</span>
-                    </div>
-                  )}
+                  <p className="flex flex-col items-center text-xs">
+                    {predict.match.date}
+                    <span className="font-bold text-base">
+                      {predict.match.time}
+                    </span>
+                  </p>
+                  <BiBell />
                 </div>
-                <span className="text-blue-500 font-bold">VS</span>
-                <div className="flex flex-col items-center justify-center gap-2">
-                  <Image
-                    src={predict.match.teams[1].logo}
-                    alt={predict.sport.name}
-                    className="w-[40px] h-[40px]"
-                    width={80}
-                    height={10}
-                  />
-                  <span className="font-bold text-sm">
-                    {predict.match.teams[1].name}
-                  </span>
 
-                  {predict.match.teams[1].status == "Lose" ? (
-                    <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
-                      Lose
-                    </div>
-                  ) : (
-                    <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
-                      <BiTrophy />
-                      {predict.match.teams[1].winProbability}
-                      <span>Win</span>
-                    </div>
-                  )}
+                <div className="flex flex-row w-full justify-between items-center">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Image
+                      src={predict.match.teams[0].logo}
+                      alt={predict.sport.name}
+                      className="w-[40px] h-[40px]"
+                      width={80}
+                      height={10}
+                    />
+                    <span className="font-bold text-sm">
+                      {predict.match.teams[0].name}
+                    </span>
+
+                    {predict.match.teams[0].status === "Lose" ? (
+                      <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
+                        Lose
+                      </div>
+                    ) : (
+                      <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
+                        <BiTrophy />
+                        {predict.match.teams[0].winProbability}
+                        <span>Win</span>
+                      </div>
+                    )}
+                  </div>
+                  <span className="text-blue-500 font-bold">VS</span>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Image
+                      src={predict.match.teams[1].logo}
+                      alt={predict.sport.name}
+                      className="w-[40px] h-[40px]"
+                      width={80}
+                      height={10}
+                    />
+                    <span className="font-bold text-sm">
+                      {predict.match.teams[1].name}
+                    </span>
+
+                    {predict.match.teams[1].status === "Lose" ? (
+                      <div className="bg-red-500 text-white rounded-md px-2 py-1 text-sm">
+                        Lose
+                      </div>
+                    ) : (
+                      <div className="flex flex-row bg-green-500 text-white rounded-md px-2 py-1 items-center gap-1 text-sm">
+                        <BiTrophy />
+                        {predict.match.teams[1].winProbability}
+                        <span>Win</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </motion.div>

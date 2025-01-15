@@ -43,10 +43,10 @@ const Approach = () => {
 
         <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12">
           <Image
-            src="/assets/images/cross.png"
+            src="/assets/images/soccer.png"
             alt="Bethive AI"
-            width={250}
-            height={250}
+            width={500}
+            height={500}
           />
           <div className="flex flex-col text-gray-400">
             <h1 className="text-2xl font-bold text-white">
@@ -97,16 +97,16 @@ const Approach = () => {
           <Image
             src="/assets/images/timer.png"
             alt="Bethive AI"
-            width={150}
-            height={150}
+            width={500}
+            height={500}
           />
         </motion.div>
         <motion.div className="flex flex-col sm:flex-row items-center text-center sm:text-start gap-12 mt-24">
           <Image
             src="/assets/images/circle.png"
             alt="Bethive AI"
-            width={250}
-            height={250}
+            width={500}
+            height={500}
           />
           <div className="flex flex-col text-gray-400">
             <h1 className="text-2xl font-bold text-white">

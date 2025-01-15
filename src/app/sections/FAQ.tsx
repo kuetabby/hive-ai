@@ -73,24 +73,26 @@ export default function FAQSection() {
                   className="flex justify-between items-center p-4 cursor-pointer hover:bg-primaryColorLight/50 hover:shadow-lg hover:shadow-primaryColorLight/20 transition-all"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center text-base sm:text-lg md:text-xl gap-3">
+                    {/* Ikon dengan ukuran responsif */}
                     <LuCircleCheck
-                      className="text-primaryColorLight"
-                      size={24}
+                      className="text-primaryColorLight flex-shrink-0"
+                      size={20} // Ukuran tetap pada ikon
                     />
-                    <h3 className="font-semibold text-white">
+                    {/* Pertanyaan dengan ukuran responsif */}
+                    <h3 className="font-semibold text-white text-sm sm:text-base md:text-lg">
                       {item.question}
                     </h3>
                   </div>
                   {activeIndex === index ? (
                     <AiOutlineMinus
-                      className="text-primaryColorLight"
-                      size={20}
+                      className="text-primaryColorLight flex-shrink-0"
+                      size={20} // Ukuran tetap pada ikon
                     />
                   ) : (
                     <AiOutlinePlus
-                      className="text-primaryColorLight"
-                      size={20}
+                      className="text-primaryColorLight flex-shrink-0"
+                      size={20} // Ukuran tetap pada ikon
                     />
                   )}
                 </div>
@@ -102,7 +104,7 @@ export default function FAQSection() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="p-4 text-gray-300 text-sm"
+                    className="p-4 text-gray-300 text-xs sm:text-sm md:text-base"
                   >
                     {item.answer}
                   </motion.div>
