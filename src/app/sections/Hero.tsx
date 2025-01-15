@@ -101,7 +101,7 @@ export default function Hero() {
             onClick={() => {}}
             className="px-4 py-2 bg-primaryColorLight/20 border border-primaryColor  hover:shadow-lg hover:shadow-primaryColorLight/70"
           >
-            Buy $
+            Buy $BVAI
           </motion.button>
         </div>
       </div>
