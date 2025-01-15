@@ -203,12 +203,12 @@ export default function Features() {
         >
           {predictions.map((predict, index) => (
             <motion.div
-              key={index}
               className="relative w-full flex flex-col bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 shadow-lg p-6 rounded-lg text-center transform transition-transform hover:scale-105 border border-white/10 hover:border-primaryColorLight/50 gap-4 overflow-hidden"
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: { opacity: 1, y: 0 },
-              }}
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.3 }}
             >
               {/* Overlay */}
               <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-md flex items-center justify-center z-10">

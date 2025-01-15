@@ -9,6 +9,15 @@ import Image from "next/image";
 import LogoPurple from "@/src/assets/bethive_logo_purple.png";
 
 export default function Hero() {
+  const zoomIn = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeInOut" },
+    },
+  };
+
   // const contractAddress = "0x1234...abcd";
   // const ticker = "$XXX";
 
@@ -44,6 +53,7 @@ export default function Hero() {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           <div className="flex flex-row items-center gap-2 bg-primaryColorLight/10 backdrop-blur-sm rounded-full px-4 py-2 border border-primaryColorLight/25 text-white">
             <Image
@@ -59,17 +69,18 @@ export default function Hero() {
         </motion.h1>
         <motion.h1
           className="text-4xl sm:text-6xl font-bold leading-tight"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          initial="hidden"
+          whileInView="visible"
+          variants={zoomIn} // Zoom-in effect
+          viewport={{ once: false, amount: 0.2 }}
         >
           Smarter Football Betting with AI Precision.
         </motion.h1>
         <motion.div
-          className="text-center"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          initial="hidden"
+          whileInView="visible"
+          variants={zoomIn} // Zoom-in effect
+          viewport={{ once: false, amount: 0.2 }}
         >
           Bethive AI revolutionizes football betting with AI predictions,
           empowering users with accurate insights and smarter strategies.
