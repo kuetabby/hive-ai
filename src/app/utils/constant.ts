@@ -2,7 +2,7 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "/",
+  whitepaper: "https://docs.bethiveai.com/",
   twitter: "https://x.com/BethiveAI",
   telegram: "https://t.me/BethiveAI",
   medium: "https://medium.com",
