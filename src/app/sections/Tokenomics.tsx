@@ -10,7 +10,7 @@ interface StatItem {
 
 // Data untuk Statistik
 const stats: StatItem[] = [
-  { value: "-", description: "Name" },
+  { value: "BethiveAI", description: "Name" },
   { value: "100M", description: "Total Supply" },
   { value: "5%", description: "Fee Buy / Sell" },
   { value: "ETH / ERC-20", description: "Network" },

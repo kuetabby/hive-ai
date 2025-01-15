@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <About />
+      {/* <About /> */}
+      <Approach />
       <Tokenomics />
       {/* <Roadmap /> */}
-      <Approach />
       <FAQSection />
     </>
   );

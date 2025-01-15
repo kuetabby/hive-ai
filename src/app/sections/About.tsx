@@ -46,7 +46,7 @@ const About = () => {
       >
         {/* Content Section */}
         <div className="w-full">
-          <span className="text-primaryColorLight text-sm">How to</span>
+          <span className="text-primaryColorLight text-sm">Foundation</span>
           <motion.h1
             className="text-4xl sm:text-5xl font-bold mt-4"
             initial={{ y: -20, opacity: 0 }}
@@ -55,7 +55,7 @@ const About = () => {
           >
             Three protocols as a system foundation
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -63,7 +63,7 @@ const About = () => {
           >
             Here is a selection of the latest trending online games available at
             Bethive AI.
-          </motion.p>
+          </motion.p> */}
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-6"
             initial="hidden"
