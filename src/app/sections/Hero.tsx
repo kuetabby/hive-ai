@@ -7,6 +7,8 @@ import Image from "next/image";
 // import { IoCopyOutline } from "react-icons/io5";
 
 import LogoPurple from "@/src/assets/bethive_logo_purple.png";
+import { socialsLink } from "../utils/constant";
+import Link from "next/link";
 
 export default function Hero() {
   const zoomIn = {
@@ -86,12 +88,15 @@ export default function Hero() {
           empowering users with accurate insights and smarter strategies.
         </motion.div>
         <div className="flex flex-row gap-6 items-center justify-center">
-          <motion.button
-            onClick={() => {}}
-            className="px-4 py-2 bg-gradient-to-br from-primaryColorLight via-primaryColor to-primaryColorDark hover:shadow-lg hover:shadow-primaryColorLight/70"
+          <Link
+            href={socialsLink.whitepaper}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Documentation
-          </motion.button>
+            <motion.button className="px-4 py-2 bg-gradient-to-br from-primaryColorLight via-primaryColor to-primaryColorDark hover:shadow-lg hover:shadow-primaryColorLight/70">
+              Documentation
+            </motion.button>
+          </Link>
           <motion.button
             onClick={() => {}}
             className="px-4 py-2 bg-primaryColorLight/20 border border-primaryColor  hover:shadow-lg hover:shadow-primaryColorLight/70"
