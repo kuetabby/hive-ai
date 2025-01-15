@@ -13,6 +13,7 @@ export default function AppBar() {
   const menuItems = [
     { id: "home", label: "Home", external: false },
     { id: "events", label: "Events", external: false },
+    { id: "foundation", label: "Foundation", external: false },
     { id: "tokenomics", label: "Tokenomics", external: false },
     { id: "faq", label: "FAQ", external: false },
     // { id: "agents", label: "AI Agents", external: true },

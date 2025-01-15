@@ -13,58 +13,58 @@ import { BiBell, BiTrophy } from "react-icons/bi";
 // } from "react-icons/fa";
 
 export default function Features() {
-  const sports = [
-    {
-      image: "/assets/images/sports/f1.png",
-      title: "Formula 1",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/premier_league.png",
-      title: "Premier League",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/champions_league.png",
-      title: "Champions League",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/motogp.png",
-      title: "MotoGP",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/afc_cup.png",
-      title: "AFC Cup",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/olympics.png",
-      title: "Olympics",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/nascar.png",
-      title: "Nascar",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/f1.png",
-      title: "Formula 1",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/f1.png",
-      title: "Formula 1",
-      link: "",
-    },
-    {
-      image: "/assets/images/sports/f1.png",
-      title: "Formula 1",
-      link: "",
-    },
-  ];
+  // const sports = [
+  //   {
+  //     image: "/assets/images/sports/f1.png",
+  //     title: "Formula 1",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/premier_league.png",
+  //     title: "Premier League",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/champions_league.png",
+  //     title: "Champions League",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/motogp.png",
+  //     title: "MotoGP",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/afc_cup.png",
+  //     title: "AFC Cup",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/olympics.png",
+  //     title: "Olympics",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/nascar.png",
+  //     title: "Nascar",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/f1.png",
+  //     title: "Formula 1",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/f1.png",
+  //     title: "Formula 1",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "/assets/images/sports/f1.png",
+  //     title: "Formula 1",
+  //     link: "",
+  //   },
+  // ];
 
   const predictions = [
     {
@@ -169,6 +169,7 @@ export default function Features() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
+        <div className="h-10" />
         {/* Section Heading */}
         <h2 className="text-primaryColorLight mb-2">Events</h2>
         <h2 className="text-4xl font-extrabold text-white mb-2">

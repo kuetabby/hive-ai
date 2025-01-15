@@ -15,7 +15,7 @@ const Approach = () => {
 
   return (
     <section
-      id="approach"
+      id="foundation"
       className="w-full py-20 bg-backgroundColor space-y-64 max-w-screen-lg"
     >
       <motion.div
@@ -24,6 +24,7 @@ const Approach = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
+        <div className="h-10" />
         {/* Section Heading */}
         <h2 className="text-primaryColorLight uppercase tracking-wide text-sm mb-2">
           Foundation
